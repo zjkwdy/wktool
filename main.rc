@@ -1,0 +1,44 @@
+#pragma code_page(65001)
+
+
+#include <windows.h>
+//#include "commit.h"
+
+//1 MANIFEST "./main.manifest.xml"
+//0 ICON "azucat.ico"
+AZUCAT ICON "azucat.ico"
+
+100 RCDATA "WinIo64.sys"
+
+VS_VERSION_INFO VERSIONINFO
+    FILEVERSION 0,7,2,1
+    PRODUCTVERSION 0,7,2,1
+#ifdef _DEBUG
+  FILEFLAGS VS_FF_DEBUG
+#else
+  FILEFLAGS 0x0L
+#endif
+  FILEOS VOS__WINDOWS32
+  FILETYPE VFT_APP
+  FILESUBTYPE 0x0L
+  BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+      BLOCK "000004b0"
+      BEGIN
+        VALUE "CompanyName", "梓喵保护中心"
+        VALUE "FileDescription", "梓喵茶杯.exe"
+        VALUE "FileVersion", "0721"
+        VALUE "LegalCopyright", "梓喵保护中心"
+        VALUE "LegalTrademarks", "あずにゃんにゃんにゃん~"
+        VALUE "OriginalFilename", "梓喵茶杯.exe"
+        VALUE "ProductName", "梓喵茶杯"
+        // VALUE "ProductVersion", LCOMMIT
+        VALUE "阿梓喵", "喵喵喵"
+      END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+      VALUE "Translation", 0x0, 1200
+    END
+  END
